@@ -1,32 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="shortcut icon" type="img/png" href="favicon.png">
-	<script
-	  src="https://code.jquery.com/jquery-3.4.1.js"
-	  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-	  crossorigin="anonymous"></script>
 	<title>Reancirl Balaba</title>
+  <link rel="shortcut icon" type="img/png" href="favicon.png">
+	<link href="style.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous">  
+  </script>
 
 </head>
 <body>
-<!-- Loading part -->
-<div class="animate-wrapper">
-	<h2 class="animate">Loading</h2>
-</div>
-<!-- CONTENT -->
-<div class="content">
-	<h1>Coming soon...</h1>
-</div>
+<!-- Masthead -->
+  <div class="content">
+    <header class="masthead bg-primary text-primary text-center">
+      <div class="container d-flex align-items-center flex-column">
+
+        <!-- Masthead Avatar Image -->
+        <img class="masthead-avatar" src="rb.JPG" alt="">
+
+        <!-- Masthead Heading -->
+        <h1 class="masthead-heading">Reancirl Balaba</h1>
+
+        <!-- Masthead Subheading -->
+        <p class="masthead-subheading font-weight-light">4th year BSIT Student Major in Database Systems</p>
+
+        <!-- Slider Section -->
+        <div class="slider-wrapper">
+          Proficient in
+          <div class="slider">
+              <div class="slider-text1">HTML</div>
+              <div class="slider-text2">CSS</div>
+              <div class="slider-text3">PHP</div>
+              <div class="slider-text4">JS</div>
+          </div>
+        </div>
 
 
-<script>
-    $(window).on("load",function()
-    {
-      $(".animate-wrapper").fadeOut("slow");
-    });
-</script>
+        <!-- Social Media Icons -->
+        <div class="social-icons">
+            <a href="https://web.facebook.com/reancirl">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://twitter.com/0reancirl">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/reancirl.balaba">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/reancirl">
+              <i class="fab fa-github"></i>
+            </a>
+        </div>
+      </header>
+    </div>
+
+      <!-- Custom loding part -->
+      <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+      </div>
+        <script>
+          $(window).on("load",function(){
+            $(".loader-wrapper").fadeOut("slow");
+          });
+        </script>
 </body>
 </html>
