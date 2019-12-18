@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Reancirl Balaba</title>
-  <link rel="shortcut icon" type="img/png" href="favicon.png">
-	<link href="style.css" rel="stylesheet">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Reancirl Balaba</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-  <script
-    src="https://code.jquery.com/jquery-3.4.1.js"
-    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-    crossorigin="anonymous">  
-  </script>
+  <!-- Favicons -->
+  <link href="favicon.png" rel="icon">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.css" rel="stylesheet">
+
+
+
+  <!-- Main Stylesheet File -->
+  <link href="style.css" rel="stylesheet">
 
 </head>
+
 <body>
-<!-- Masthead -->
-  <div class="content">
-    <header class="masthead bg-primary text-primary text-center">
-      <div class="container d-flex align-items-center flex-column">
 
-        <!-- Masthead Avatar Image -->
-        <img class="masthead-avatar" src="rb.jpg" alt="">
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#home"> [Balaba, Reancirl]; </a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <!-- NAVIGATION -->
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+      <label for="nav-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ol class="navigation__list">
+          <li class="navigation__item"><a href="#about" class="navigation__link">About me</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">My Skills</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Projects</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Personal Blog</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__link">Contact me</a></li>
+        </ol>
+      </nav>
+    </div>
+    </div>
+  </nav>
 
-        <!-- Masthead Heading -->
-        <h1 class="masthead-heading">Reancirl Balaba</h1>
+  <!--/ Nav End /-->
 
-        <!-- Masthead Subheading -->
-        <p class="masthead-subheading font-weight-light">4th year BSIT Student Major in Database Systems</p>
+  <!--/ Intro Skew Star /-->
+  <div id="home" class="intro route bg-image" style="background-image: url(intro-bg.png)">
+    <div class="overlay-itro"></div>
+    <div class="intro-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="intro-title mb-4">go all the way</h1>
+          <!-- <p class="intro-subtitle"><span class="text-slider-items">Student,Web Developer,Web Designer</span><strong class="text-slider"></strong></p> -->
 
-        <!-- Slider Section -->
-        <div class="slider-wrapper">
-          Proficient in
-          <div class="slider">
-              <div class="slider-text1">HTML</div>
-              <div class="slider-text2">CSS</div>
-              <div class="slider-text3">PHP</div>
-              <div class="slider-text4">JS</div>
-          </div>
-        </div>
-
-
-        <!-- Social Media Icons -->
-        <div class="social-icons">
+          <div class="social-icons">
             <a href="https://web.facebook.com/reancirl">
               <i class="fab fa-facebook"></i>
             </a>
@@ -51,21 +75,42 @@
             <a href="https://www.instagram.com/reancirl.balaba">
               <i class="fab fa-instagram"></i>
             </a>
+             <a href="#">
+              <i class="fab fa-linkedin"></i>
+            </a>
             <a href="https://github.com/reancirl">
               <i class="fab fa-github"></i>
             </a>
         </div>
-      </header>
-    </div>
 
-      <!-- Custom loding part -->
-      <div class="loader-wrapper">
-        <span class="loader"><span class="loader-inner"></span></span>
+        </div>
       </div>
-        <script>
-          $(window).on("load",function(){
-            $(".loader-wrapper").fadeOut("slow");
-          });
-        </script>
+    </div>
+  </div>
+  <!--/ Intro Skew End /-->
+
+
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <div id="preloader"></div>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/popper/popper.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/counterup/jquery.waypoints.min.js"></script>
+  <script src="lib/counterup/jquery.counterup.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/typed/typed.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
 </body>
 </html>
+
