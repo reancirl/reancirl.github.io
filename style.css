@@ -97,6 +97,7 @@ a:hover {
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+  background-position: absolute;
 }
 
 .overlay-mf {
@@ -1149,7 +1150,8 @@ footer .credits a {
   -ms-user-select: none;
   user-select: none;
   font-size: 1rem;
-  border-radius: .3rem;
+  font-weight: 500;
+  border-radius: 5rem;
   border: 1px solid transparent;
   transition: all 500ms ease;
   cursor: pointer;
@@ -1173,7 +1175,7 @@ footer .credits a {
 
 .button-big {
   padding: .9rem 2.3rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .button-rouded {
@@ -1287,8 +1289,8 @@ footer .credits a {
 
 .navigation__button {
   background-color: #0078ff;
-  height: 3.6rem;
-  width: 3.6rem;
+  height: 3rem;
+  width: 3rem;
   border-radius: 30%;
   position: fixed;
   top: .8rem;
@@ -1315,13 +1317,14 @@ footer .credits a {
 }
 
 .navigation__background {
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 50%;
+  opacity: .55;
   position: fixed;
   top: .9rem;
   right: 6.3rem;
-  background-image: radial-gradient(#0078ff, #0078ff);
+  background: #0078ff;
   z-index: 10;
   -webkit-transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
   transition: -webkit-transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -1373,7 +1376,7 @@ footer .credits a {
 .navigation__link:link, .navigation__link:visited {
   display: inline-block;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 1000;
   color: #fff;
   padding: 1rem 2rem;
   text-decoration: none;
@@ -1386,7 +1389,7 @@ footer .credits a {
 
 .navigation__link:active, .navigation__link:hover {
   background-position: 100%;
-  color: #0078ff;
+  color: black;
   -webkit-transform: translateX(1rem);
   transform: translateX(1rem);
 }
@@ -1398,8 +1401,8 @@ footer .credits a {
 }
 
 .navigation__checkbox:checked~.navigation__background {
-  -webkit-transform: scale(80);
-  transform: scale(80);
+  -webkit-transform: scale(100);
+  transform: scale(100);
 }
 
 .navigation__checkbox:checked~.navigation__nav {
@@ -1409,11 +1412,11 @@ footer .credits a {
 
 .navigation__icon {
   position: relative;
-  margin-top: 1.9rem;
+  margin-top: 1.6rem;
 }
 
 .navigation__icon, .navigation__icon::after, .navigation__icon::before {
-  width: 2rem;
+  width: 1.5rem;
   height: 2px;
   display: inline-block;
   background-color: white;
@@ -1428,19 +1431,19 @@ footer .credits a {
 }
 
 .navigation__icon::before {
-  top: -.8rem;
+  top: -.5rem;
 }
 
 .navigation__icon::after {
-  top: .8rem;
+  top: .5rem;
 }
 
 .navigation__button:hover .navigation__icon:before {
-  top: -1rem;
+  top: -.8rem;
 }
 
 .navigation__button:hover .navigation__icon:after {
-  top: 1rem;
+  top: .8rem;
 }
 
 .navigation__checkbox:checked+.navigation__button .navigation__icon {
