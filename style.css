@@ -1,3 +1,12 @@
+.dev-icons {
+  font-size: 5rem;
+  padding-right: 1rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #0078ff;
+}
+
 .social-icons a {
   display: inline-block;
   height: 3.5rem;
@@ -31,6 +40,11 @@ h4,
 h5,
 h6 {
   color: #1e1e1e;
+}
+
+#intro-title
+{
+  color: #fff;
 }
 
 a {
@@ -155,7 +169,7 @@ a:hover {
 /*--/ Title A /--*/
 
 .title-box {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .title-a {
@@ -173,6 +187,22 @@ a:hover {
   height: 5px;
   background-color: #0078ff;
   margin: 0 auto;
+}
+
+.line-md {
+  width: 300px;
+  height: 5px;
+  background-color: #0078ff;
+  margin: 0 10px;
+}
+
+#label{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+hr{
+  border-top: .5px solid grey;
 }
 
 /*--/ Title Left /--*/
@@ -683,8 +713,8 @@ a:hover {
 ======================================*/
 
 .about-mf .box-shadow-full {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 0rem;
 }
 
 .about-mf .about-img {
@@ -1460,4 +1490,94 @@ footer .credits a {
   top: 0;
   -webkit-transform: rotate(-135deg);
   transform: rotate(-135deg);
+}
+
+/*TEXT SLIDER*/
+
+.slider-wrapper {
+  font-size: 30px;
+  color:black;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-bottom: 1rem;
+}
+.slider{
+  height: 50px;
+  padding-left:15px;
+  overflow: hidden;
+}
+.slider div {
+  color:#fff;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 2px 15px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.slider-text1 {
+  background: #589636;
+  animation: slide 5s linear infinite;
+}
+.slider-text2 {
+  background: #68a063;
+}
+.slider-text3 {
+  background: #b52e31;
+}
+.slider-text4 {
+  background: #41B883;
+}
+@keyframes slide {
+  0% {margin-top:-400px;}
+  12% {margin-top:-300px;}
+
+  24% {margin-top:-300px;}
+  36% {margin-top:-200px;}
+  48% {margin-top:-200px;}
+
+  60% {margin-top:-100px;}
+  72% {margin-top:-100px;}
+
+  84% {margin-top:0px;}
+  100% {margin-top:0px;}
+}
+
+/*TYPE WRITER EFFECT*/
+
+.typewriter {
+    font-family: Roboto, monospace;
+    display: inline-block;
+}
+
+.typewriter-text {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 1px;
+    animation: typing 2.5s steps(25, end), blink .7s step-end infinite;
+    white-space: nowrap;
+    font-size: 3rem;
+    font-weight: 700;
+    border-right: 4px solid #fff;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: #fff; 
+    }
 }
