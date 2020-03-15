@@ -319,7 +319,17 @@ hr{
 }
 
 /* Prelaoder */
-
+.loading-page
+  background: #0d0d0d
+  width: 100vw
+  height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  
+  .counter
+    text-align: center
+    
 #preloader {
   position: fixed;
   top: 0;
